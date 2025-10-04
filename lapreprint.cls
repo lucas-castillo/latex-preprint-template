@@ -50,15 +50,17 @@
 \renewcommand{\ppserver}{
   \if@biorxiv
     bio\textcolor{red}{R}$\chi$iv
-  \fi
-  \if@medrxiv
+    \else\if@medrxiv
     med\textcolor{blue}{R}$\chi$iv
-  \fi
-  \if@arxiv
+    \else\if@arxiv
     ar\textcolor{red}{X}iv
-  \fi
-  \if@chemrxiv
+    \else\if@chemrxiv
     \textbf{Chem}\textcolor{lightgray}{Rxiv}
+    \else
+    Preprint
+  \fi
+  \fi
+  \fi
   \fi
 }
 
