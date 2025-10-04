@@ -11,7 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Declare document class
-\documentclass[9pt,psyarxiv,lineno]{lapreprint}
+\documentclass[9pt,lineno]{lapreprint}
 % Choose between "biorxiv", "medrxiv", "arxiv" "psyarxiv" and "chemrxiv". Otherwise defaults "Preprint".
 % Choose between "blue" and "red" colour scheme. Defaults to "blue".
 % Use the "onehalfspacing" option for 1.5 line spacing.
@@ -50,7 +50,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[			% use biblatex for bibliography
 	backend=biber,      % use biber or bibtex backend
-    style=authoryear,   % choose style
+    style=apa, 			% choose style
 	natbib=true,		% allow natbib commands
 	hyperref=true,	    % activate hyperref support
 	alldates=year,      % only show year (not month)
@@ -76,24 +76,24 @@
 \title{LaPreprint: \\ A Preprint Template for \LaTeX}
 
 % Authors - you can use \orcidlink{} and \authfn{} - see contribution note
-\author[ \orcidlink{0000-0002-9998-0058} 1 \Letter]{Mikkel Roald-Arb\o l}
-\author[2]{Co-author}
+\author[ \orcidlink{0000-0003-0274-0777} 1 \Letter]{Lucas Castillo}
+\author[ \orcidlink{0000-0003-0442-4372} 1]{Adam N. Sanborn}
 
 % Affiliations
-\affil[1]{School of Life Sciences, University of Sussex}
-\affil[2]{University of Somewhere}
+\affil[1]{University of Warwick, United Kingdom}
+%\affil[2]{University of Somewhere}
 
 % Other metadata. Feel free to add your own
-\metadata[]{\Letter\hspace{.5ex} For correspondence}{\url{https://github.com/roaldarbol/LaPreprint/issues} (MRA)}
+\metadata[]{\Letter\hspace{.5ex} For correspondence}{\href{mailto:castillo.lucas@protonmail.com}{castillo.lucas@protonmail.com}}
 \metadata[\authfn{1}\authfn{2}\authfn{3}]{}{Here's a few symbols to denote contribution specifics, e.g. authors who contributed equally to the work.}
-\metadata[]{Present address}{Evolution, Behaviour and Environment, School of Life Sciences, University of Sussex, Biology Road, Brighton, BN1 9RH, United Kingdom}
+\metadata[]{Present address}{Department of Psychology, University of Warwick, Coventry CV4 7AL, United Kingdom}
 \metadata[]{Data availability}{Data availability statement. Preprocessed data could be available e.g. on \href{https://zenodo.org/}{Zenodo}.}
 \metadata[]{Funding}{MRA was supported by funding from the Leverhulme Foundation. The funders had no role in the template design or decision to publish.}
 \metadata[]{Competing interests}{The author declare no competing interests.}
 
 
 % Surname of the lead author(s) for the running footer
-\leadauthor{Roald-Arb\o l}
+\leadauthor{Castillo \& Sanborn}
 \shorttitle{A Preprint Template for \LaTeX}
 
  % Edit date in footer (if needed)
