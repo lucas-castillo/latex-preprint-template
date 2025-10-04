@@ -42,10 +42,12 @@
 \newif\if@medrxiv
 \newif\if@arxiv 
 \newif\if@chemrxiv
+\newif\if@psyarxiv
 \DeclareOption{biorxiv}{\@biorxivtrue}
 \DeclareOption{medrxiv}{\@medrxivtrue}
 \DeclareOption{arxiv}{\@arxivtrue}
 \DeclareOption{chemrxiv}{\@chemrxivtrue}
+\DeclareOption{psyarxiv}{\@psyarxivtrue}
 \newcommand{\ppserver}{Preprint} % Make command for the preprint logo
 \renewcommand{\ppserver}{
   \if@biorxiv
@@ -56,8 +58,11 @@
     ar\textcolor{red}{X}iv
     \else\if@chemrxiv
     \textbf{Chem}\textcolor{lightgray}{Rxiv}
+    \else\if@psyarxiv
+    PsyAr\raisebox{\depth}{$\chi$}iv
     \else
     Preprint
+  \fi
   \fi
   \fi
   \fi

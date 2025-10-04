@@ -15,7 +15,7 @@
 
 # Features
 With simple options you can enable/disable:
-- `bioRxiv`, `medRxiv`, `arXiv` and `chemRxiv` logos.
+- `bioRxiv`, `medRxiv`, `arXiv`, `chemRxiv` and `PsyArXiv` logos.
 - `blue` or `red` colour schemes
 - Figures at the end
 - Line numbers
